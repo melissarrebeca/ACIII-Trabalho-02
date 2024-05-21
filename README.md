@@ -35,7 +35,7 @@ Armazena as instruções que estão esperando a disponibilidade da UF ou dos ope
 - Dest: Qual a posição da instrução na fila
 - Address: Informações necessárias para o cálculo do endereço (em caso de load ou store)
 
-### 3) status dos registradores: 
+### 3) Status dos Registradores: 
 Mostra como estão os registradores na memória
 #### Componentes do status dos registradores: 
 - Field: Nome do registrador
