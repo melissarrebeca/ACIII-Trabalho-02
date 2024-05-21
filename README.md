@@ -3,7 +3,7 @@ Repositório contendo os códigos usados para o Trabalho 02 da disciplina de Arq
 
 ## O que é o algoritmo de Tomasulo?
 É uma técnica de escalonamento dinâmico de instruções com o objetivo de aproveitar melhor os componentes do processador, aumentar o desempenho e gerenciar conflitos de dados
-# Como ele funciona?
+## Como ele funciona?
 Seu funcionamento se dá seguindo os passos:
 - 1. armazena em uma fila as instruções que chegam da memória
 - 2. realoca as instruções para alguma das unidades de reserva
