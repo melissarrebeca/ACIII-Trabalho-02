@@ -5,23 +5,23 @@ Repositório contendo os códigos usados para o Trabalho 02 da disciplina de Arq
 É uma técnica de escalonamento dinâmico de instruções com o objetivo de aproveitar melhor os componentes do processador, aumentar o desempenho e gerenciar conflitos de dados
 # Como ele funciona?
 Seu funcionamento se dá seguindo os passos:
-    1. armazena em uma fila as instruções que chegam da memória
-    2. realoca as instruções para alguma das unidades de reserva
-    3. coloca no CDB os resultados das execuções (permitindo que os resultados sejam repassados para as unidades de reserva novamente)
+- 1. armazena em uma fila as instruções que chegam da memória
+- 2. realoca as instruções para alguma das unidades de reserva
+- 3. coloca no CDB os resultados das execuções (permitindo que os resultados sejam repassados para as unidades de reserva novamente)
 # Quais são os componentes do algoritmo, para que servem e como funcionam?
-1) buffer de reordenamento: guarda os componentes e informações necessárias para o cálculo das instruções
+# 1) buffer de reordenamento: guarda os componentes e informações necessárias para o cálculo das instruções
 Componentes do buffer de reordenamento:
-Entry: Posição da instrução na fila
-Busy: Se a posição está ocupada ou não
-Instruction: A instrução em si
-State: Status da instrução. Pode ser:
-- Waiting: esperando liberação de algum recurso
-- Issue: instrução despachada
-- Executing: instrução sendo executada
-- Write result: instrução pronta pra ser escrita no banco de registradores
-- Commited: instrução escrita no banco de registradores
-Destination: Qual o registrador de destino
-Value: O cálculo feito pela instrução
+- Entry: Posição da instrução na fila
+- Busy: Se a posição está ocupada ou não
+- Instruction: A instrução em si
+- State: Status da instrução. Pode ser:
+-- Waiting: esperando liberação de algum recurso
+-- Issue: instrução despachada
+-- Executing: instrução sendo executada
+-- Write result: instrução pronta pra ser escrita no banco de registradores
+-- Commited: instrução escrita no banco de registradores
+- Destination: Qual o registrador de destino
+- Value: O cálculo feito pela instrução
 
 2) estação de reserva: armazena as instruções que estão esperando a disponibilidade da UF ou dos operandos
 
