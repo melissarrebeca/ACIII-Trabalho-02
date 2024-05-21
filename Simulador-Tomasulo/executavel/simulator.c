@@ -232,9 +232,6 @@ int noDependencies(int qj, int qk){
 void initializer(char* filename){
 
 	system(" cls || clear ");
-	/*
-	printf("You are using a Tomasulo's Algorithm Simulator created by students\nThe following Instructions will run on it:\n");
-	*/
 	Reorder_Buffer *rb = reorderBufferInitializer();
 	Instruction *instructions = instructionsInitializer(filename);
 	Reservation_Station *rs = reservationStationInitializer();
@@ -344,7 +341,7 @@ void initializer(char* filename){
 		printRegisterStatus(registerRename);
 
 		fflush(stdin);
-		printf("\n**Press Enter to continue your execution. . .\n");
+		printf("\n**A cada Enter, um ciclo de clock\n");
 		getchar();
 		system("cls || clear");
 
