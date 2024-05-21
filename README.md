@@ -9,8 +9,9 @@ Seu funcionamento se dá seguindo os passos:
 - 2. realoca as instruções para alguma das unidades de reserva
 - 3. coloca no CDB os resultados das execuções (permitindo que os resultados sejam repassados para as unidades de reserva novamente)
 ## Quais são os componentes do algoritmo, para que servem e como funcionam?
-### 1) buffer de reordenamento: guarda os componentes e informações necessárias para o cálculo das instruções
-Componentes do buffer de reordenamento:
+### 1) Buffer de Reordenamento: 
+Guarda os componentes e informações necessárias para o cálculo das instruções
+#### Componentes do buffer de reordenamento:
 - Entry: Posição da instrução na fila
 - Busy: Se a posição está ocupada ou não
 - Instruction: A instrução em si
@@ -23,8 +24,9 @@ Componentes do buffer de reordenamento:
 - Destination: Qual o registrador de destino
 - Value: O cálculo feito pela instrução
 
-### 2) estação de reserva: armazena as instruções que estão esperando a disponibilidade da UF ou dos operandos
-Componentes da estação de reserva:
+### 2) Estação de Reserva:
+Armazena as instruções que estão esperando a disponibilidade da UF ou dos operandos
+#### Componentes da estação de reserva:
 - Name: Qual unidade funcional a instrução vai utilizar
 - Busy: Se a UF está ocupada ou não
 - Op: Qual operação vai ser usada pela UF
@@ -33,8 +35,9 @@ Componentes da estação de reserva:
 - Dest: Qual a posição da instrução na fila
 - Address: Informações necessárias para o cálculo do endereço (em caso de load ou store)
 
-### 3) status dos registradores: mostra como estão os registradores na memória
-Componentes do status dos registradores: 
-Field: Nome do registrador
-Reorder: Posição da instrução que o está usando na fila
-Busy: Se ele está ocupado ou não
+### 3) status dos registradores: 
+Mostra como estão os registradores na memória
+#### Componentes do status dos registradores: 
+- Field: Nome do registrador
+- Reorder: Posição da instrução que o está usando na fila
+- Busy: Se ele está ocupado ou não
