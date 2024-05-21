@@ -15,11 +15,11 @@ Componentes do buffer de reordenamento:
 - Busy: Se a posição está ocupada ou não
 - Instruction: A instrução em si
 - State: Status da instrução. Pode ser:
--- Waiting: esperando liberação de algum recurso
--- Issue: instrução despachada
--- Executing: instrução sendo executada
--- Write result: instrução pronta pra ser escrita no banco de registradores
--- Commited: instrução escrita no banco de registradores
+  Waiting: esperando liberação de algum recurso
+   Issue: instrução despachada
+   Executing: instrução sendo executada
+   Write result: instrução pronta pra ser escrita no banco de registradores
+   Commited: instrução escrita no banco de registradores
 - Destination: Qual o registrador de destino
 - Value: O cálculo feito pela instrução
 
